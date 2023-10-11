@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;500&family=Sedgwick+Ave+Display&family=Ultra&family=Urbanist:ital,wght@0,100;0,500;0,700;1,100;1,500;1,700&display=swap");
+/* define variables */
+/* main document basics */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFEDE3;
+  min-height: 100vh;
+}
+
+.header-text-align, header .graffiti, header h2, header h1 {
+  margin-right: 2%;
+  display: block;
+  text-align: right;
+}
+@media screen and (max-width: 1135px) {
+  .header-text-align, header .graffiti, header h2, header h1 {
+    text-align: center;
+    margin-left: 2%;
+  }
+}
+
+header {
+  background-color: #00555E;
+  background-image: url(images/header_yard.png);
+  background-repeat: repeat;
+  color: #C74600;
+  width: 100%;
+  text-align: right;
+  overflow: auto;
+  padding-bottom: 10px;
+  border-top-right-radius: 15px;
+}
+header .nav-burger {
+  display: none;
+}
+header h1 {
+  color: #FFEDE3;
+  font-family: "Ultra", serif;
+  font-weight: 700;
+  font-size: 4.25em;
+  letter-spacing: 0.1em;
+}
+header img {
+  float: left;
+  border-radius: 10px;
+  margin: 15px;
+  height: 500px;
+  width: auto;
+  margin-left: 2%;
+}
+@media screen and (max-width: 1470px) {
+  header img {
+    display: none;
+  }
+}
+header h2 {
+  color: #ffccb0;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  margin-left: 40%;
+}
+@media screen and (max-width: 1135px) {
+  header h2 {
+    margin-left: 2%;
+  }
+}
+header .graffiti {
+  margin-left: 20px;
+  color: #32BFA5;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 3.5em;
+  font-weight: 100;
+}
+
+nav {
+  background-color: #32bfa5;
+  color: #FFEDE3;
+  width: 100%;
+  top: -15px;
+  margin-top: -10px;
+  padding-left: 5%;
+  border: 0px;
+  border-bottom-right-radius: 50px;
+}
+nav ul {
+  padding: 2% 0px 2% 0px;
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px 3em 10px 0;
+  color: #612200;
+  letter-spacing: 0.2em;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.55em;
+  font-weight: 800;
+}
+@media screen and (max-width: 765px) {
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+}
+nav ul li a {
+  color: #FFEDE3;
+}
+nav ul li a:visited {
+  color: #612200;
+}
+nav ul li a:hover {
+  color: #ffab7d;
+}
+nav ul .dropdown {
+  display: inline-block;
+  position: absolute;
+}
+nav ul .dropdown-content {
+  display: grid;
+  z-index: 1;
+  margin-top: 8%;
+}
+nav ul .dropdown-content + a {
+  margin-top: 0%;
+}
+
+main {
+  margin: 0 5% 0 5%;
+  background-color: #FFEDE3;
+  color: #2B190F;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+main p {
+  color: #2B190F;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+}
+main p .info {
+  color: black;
+}
+main p::first-letter {
+  color: #C74600;
+  font-size: 1.55em;
+}
+main h2 {
+  color: #ae3d00;
+  font-family: "Ultra", serif;
+  font-weight: 200;
+  font-size: 2.5em;
+  text-decoration: underline;
+  text-align: center;
+}
+main h3 {
+  color: #7b2b00;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+}
+main H4 {
+  color: #1d6e5f;
+  width: 70%;
+  text-align: left;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 1.55em;
+}
+main img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+@media screen and (min-width: 1500px) {
+  main img {
+    width: 1400px;
+  }
+}
+main .last-image {
+  width: 100%;
+  height: auto;
+  padding-bottom: 25px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #C74600;
+  color: #FFEDE3;
+  width: 100%;
+  padding: 25px 20px 25px 15px;
+  border-radius: 15px;
+}
+footer p {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 100;
+  font-size: 1.25em;
+}
+footer a {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+footer .footer-column-1 {
+  grid-column: 1/2;
+  padding-left: 10%;
+}
+footer .footer-column-1 {
+  grid-column: 2/3;
+}
+footer .footer-column-1 {
+  grid-column: 3/4;
+  text-align: right;
+}
+@media only screen and (max-width: 800px) {
+  footer {
+    display: block;
+    text-align: center;
+  }
+  footer img {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=DerailSassy.css.map */
